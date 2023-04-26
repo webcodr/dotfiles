@@ -1,0 +1,6 @@
+alias tmn="tmux new -s"
+alias tma="tmux attach"
+alias tmk="tmux kill-session"
+alias tml="tmux list"
+alias vim="nvim"
+alias vi="nvim"
