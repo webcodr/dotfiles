@@ -20,7 +20,7 @@
           "leading_diamond": "\ue0b6",
           "trailing_diamong": "\ue0b0",
           "style": "diamond",
-          "template": "{{ .HostName }}",
+          "template": " {{ .HostName }} ",
           "type": "session"
         },
         {
@@ -35,6 +35,14 @@
           "template": " {{ .Path }} ",
           "type": "path",
           "powerline_symbol": "\ue0b0"
+        },
+        {
+          "background": "p:pink",
+          "foreground": "p:text",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " \ue791 {{ .Full }} ",
+          "type": "ruby"
         }
       ],
       "type": "prompt"
