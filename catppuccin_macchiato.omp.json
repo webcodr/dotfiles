@@ -43,6 +43,14 @@
           "style": "powerline",
           "template": " \ue791 {{ .Full }} ",
           "type": "ruby"
+        },
+        {
+          "background": "p:pink",
+          "foreground": "p:text",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " \ue7a8 {{ .Full }} ",
+          "type": "rust"
         }
       ],
       "type": "prompt"
