@@ -11,7 +11,7 @@ alias ga="git add"
 alias gaa="git add -A"
 
 eval "$(zoxide init zsh)"
-eval "$(oh-my-posh init zsh --config $HOME/.config/dotfiles/catppuccin_macchiato.omp.json)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/dotfiles/theme.omp.json)"
 
 # ~/.tmux/plugins
 export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
