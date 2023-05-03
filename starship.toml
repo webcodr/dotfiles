@@ -1,0 +1,71 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](fg:#8AADF4)\
+$hostname\
+[](fg:#8AADF4 bg:#B7BDF8)\
+$directory\
+[](fg:#B7BDF8 bg:#F5BDE6)\
+$nodejs\
+$rust\
+$ruby\
+$kotlin\
+[ ](fg:#F5BDE6)\
+"""
+
+right_format = """
+$git_branch\
+$git_status\
+"""
+
+[hostname]
+format = '[ $hostname ](fg:#494D64 bg:#8AADF4)'
+ssh_only = false
+trim_at = '.local'
+disabled = false
+
+[directory]
+style = "fg:#494D64 bg:#B7BDF8"
+format = "[ $path ]($style)"
+truncation_length = 1
+truncation_symbol = "/"
+
+[directory.substitutions]
+"Documents" = ""
+"Downloads" = ""
+"Music" = ""
+"Pictures" = ""
+
+[git_branch]
+symbol = ""
+style = "fg:#F5BDE6"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "fg:#F5BDE6"
+format = '[ $all_status $ahead_behind]($style)'
+
+[nodejs]
+symbol = ""
+style = "fg:#494D64 bg:#F4BDE6"
+format = '[ $symbol ($version) ]($style)'
+version_format = "${raw}"
+
+[rust]
+symbol = ""
+style = "fg:#494D64 bg:#F4BDE6"
+format = '[ $symbol ($version) ]($style)'
+version_format = "${raw}"
+
+[ruby]
+symbol = ""
+style = "fg:#494D64 bg:#F4BDE6"
+format = '[ $symbol ($version) ]($style)'
+detect_variables = []
+version_format = "${raw}"
+
+[kotlin]
+symbol = ""
+style = "fg:#494D64 bg:#F4BDE6"
+format = '[ $symbol ($version) ]($style)'
+version_format = "${raw}"
